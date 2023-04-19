@@ -1,3 +1,3 @@
-# #golden-tiger/javascript-package-template
+# #golden-tiger/clone
 
-JavaScript Package Template
+Clone a JS Value.
