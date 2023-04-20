@@ -20,16 +20,7 @@ export function clone<T = any>(from: T): T {
       return new Date((from as Date).getTime()) as T;
     case '[object RegExp]':
       return new RegExp((from as RegExp).source) as T;
-    case '[object Error]':
-      return new Error((from as Error).message) as T;
-    case '[object Undefined]':
-    case '[object Null]':
-    case '[object NaN]':
-    case '[object Number]':
-    case '[object String]':
-    case '[object Boolean]':
-    case '[object Function]':
-    default: 
+    default:
       return from;
   }
 }
