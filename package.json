@@ -1,9 +1,10 @@
 {
   "name": "@golden-tiger/clone",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "@golden-tiger/clone",
   "main": "./lib/cjs-module.js",
   "module": "./lib/es-module.js",
+  "typings": "./dist/src/index.d.ts",
   "scripts": {
     "dev:mac": "mode=development minimize=false webpack --config webpack.config.js --env development --env minimize=false",
     "build:mac": "mode=production minimize=true webpack --config webpack.config.js --env production --env minimize",
